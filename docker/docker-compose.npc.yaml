@@ -1,0 +1,11 @@
+services:
+  npc:
+    image: duan2001/npc
+    container_name: npc
+    network_mode: "host"
+    restart: always
+    command: >
+      -server=<public_ip>:8024
+      -vkey=<key>
+      -tls_enable=false
+      -log=off
