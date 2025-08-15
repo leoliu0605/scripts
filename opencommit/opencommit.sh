@@ -22,9 +22,9 @@ fi
 infisical login
 infisical init
 
-oco config set OCO_AI_PROVIDER=azure
-oco config set OCO_API_KEY=$(infisical secrets get AureOpenAI --plain --silent)
-oco config set OCO_API_URL=$(infisical secrets get AureOpenAI-Endpoint --plain --silent)
+oco config set OCO_AI_PROVIDER=openai
+oco config set OCO_API_KEY=$(infisical secrets get OpenAI --plain --silent)
+oco config set OCO_API_URL=
 oco config set OCO_MODEL=gpt-4o
 oco config set OCO_ONE_LINE_COMMIT=true
 oco config set OCO_WHY=false
