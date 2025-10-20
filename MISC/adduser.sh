@@ -1,24 +1,5 @@
 #!/bin/bash
-################################################################################
-# Fork: https://github.com/appleboy/Shell-Script/blob/master/adduser.sh
-# Date:     2024/09/26
-# Author:   appleboy (appleboy.tw AT gmail.com)
-#           Leo      (jafee201153@gmail.com)
-#
-# Program:
-#   Use the function to add system user and samba permission.
-#
-# History:
-#   2011/03/14 first release
-#   2011/03/15 add default_group default_home default_shell for config
-#   2011/03/25 rewrite process command line
-#   2013/04/30 add default group which is not exist and change password format '!${username}!'
-#   2013/07/19 support set password command
-#   2024/09/26 make config variables customizable via env vars
-#
-################################################################################
 
-VERSION="0.1"
 ROOT_UID=0
 #
 # config
